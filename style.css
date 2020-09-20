@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: 'DM Serif Display', serif;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.125em;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 10rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #837d87;
+}
+
+.header .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav .nav-link {
+  margin-right: 2rem;
+}
+
+.header nav .nav-btn {
+  border: solid 2px #2d2640;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2.5rem;
+}
+
+.header .main-header {
+  background-color: #2d2640;
+  color: #fafafa;
+  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header .main-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .main-header h1 {
+  font-size: 4rem;
+}
+
+.header .main-header p {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

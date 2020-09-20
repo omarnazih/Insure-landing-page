@@ -1,0 +1,93 @@
+$main-background-color : #fafafa;
+// primary 
+$p-darkviolet : hsl(256, 26%, 20%);
+$p-Grayish-Blue : hsl(216, 30%, 68%);
+// Neutral
+$clr-buttons-hover:hsl(270, 9%, 17%);
+$clr-text-main:hsl(273, 4%, 51%);
+$clr-text-sec:hsl(0, 6%, 79%);
+//heading font
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+// font-family: 'DM Serif Display', serif;
+//normal fonts
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// font-family: 'Karla', sans-serif;
+// Font size
+$main-font-size : 1.125em;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+  font-family: 'DM Serif Display', serif;
+}
+
+body{
+  background-color: #fafafa;
+  font-family: 'Karla', sans-serif;
+  font-size: $main-font-size;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 10rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+.header{
+
+  a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $clr-text-main;
+  }
+
+  .nav-container{
+    display: flex;
+    padding: 3rem 0;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .nav-link{
+      margin-right: 2rem;
+    }
+
+    .nav-btn{
+      border: solid 2px $p-darkviolet;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2.5rem;
+    }
+  }
+
+  .main-header{
+    background-color: $p-darkviolet;
+    color: $main-background-color;
+    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    .container{
+      display: flex;
+    }
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+
+}
