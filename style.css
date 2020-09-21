@@ -37,7 +37,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem 0;
+  padding: 1rem 0;
+  font-size: smaller;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -74,7 +75,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 2.5rem;
+  padding: rem 1.5rem;
 }
 
 .header .main-header {
@@ -83,6 +84,7 @@ img {
   background-image: url(./images/bg-pattern-intro-right-desktop.svg);
   background-repeat: no-repeat;
   background-position: right;
+  position: relative;
 }
 
 .header .main-header .container {
@@ -93,9 +95,50 @@ img {
 
 .header .main-header h1 {
   font-size: 4rem;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .header .main-header p {
   font-size: 14px;
+}
+
+.header .main-header .main-header-text {
+  padding-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header .main-header .main-header-text p {
+  margin-top: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.header .main-header .main-header-text .header-btn {
+  display: inline;
+  cursor: pointer;
+  border: #fafafa 2px solid;
+  color: #fafafa;
+  font-weight: 100;
+  font-size: smaller;
+  padding: 0.5rem 2rem;
+}
+
+.header .main-header-img {
+  position: relative;
+  top: 10rem;
+  z-index: 11;
 }
 /*# sourceMappingURL=style.css.map */

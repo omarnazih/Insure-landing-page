@@ -50,7 +50,8 @@ img{
 
   .nav-container{
     display: flex;
-    padding: 3rem 0;
+    padding: 1rem 0;
+    font-size: smaller;
     align-items: center;
     font-weight: 700;
   }
@@ -69,7 +70,7 @@ img{
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1rem 2.5rem;
+      padding: rem 1.5rem;
     }
   }
 
@@ -79,15 +80,43 @@ img{
     background-image: url(./images/bg-pattern-intro-right-desktop.svg);
     background-repeat: no-repeat;
     background-position: right;
+    position: relative;
     .container{
       display: flex;
     }
     h1{
       font-size: 4rem;
+      line-height: 1;
+      font-weight: 400;
     }
     p{
       font-size: 14px;
     }
+    .main-header-text{
+      padding-right: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      p{
+        margin-top: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .header-btn{
+        display: inline;
+        cursor: pointer;
+        border: #fafafa 2px solid;
+        color: #fafafa;
+        font-weight: 100;
+        font-size: smaller;
+        padding: 0.5rem 2rem;
+      }
+    }
   }
-
+  .main-header-img{
+    position: relative;
+    top: 10rem;
+    z-index: 11;
+  }
 }
