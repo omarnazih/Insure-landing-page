@@ -20,91 +20,96 @@ body {
 
 .container {
   max-width: 1440px;
-  margin: 0 10rem;
+  margin: 0 5rem;
 }
 
 img {
   max-width: 100%;
+  display: block;
 }
 
-.header a {
-  text-transform: uppercase;
+.btn {
   text-decoration: none;
-  color: #837d87;
+  display: inline-block;
+  border: 2px solid #2b272f;
+  padding: 0.5rem 1.5rem;
+  font-size: 1em;
+  font-weight: 400;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.header .nav-container {
+.nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 0;
-  font-size: smaller;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 700;
+  padding: 2rem 0;
 }
 
-.header nav {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.nav-bar .logo {
+  height: 18px;
+}
+
+.nav-bar .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: uppercase;
 }
 
-.header nav .nav-link {
+.nav-bar .nav-links .nav-link {
   margin-right: 2rem;
+  color: #837d87;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.header nav .nav-btn {
-  border: solid 2px #2d2640;
+.nav-bar .nav-links .nav-btn {
+  color: #2b272f;
+}
+
+.header-intro {
+  background-color: #2C2640;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.header-intro .intro-right-pattern {
+  position: absolute;
+  right: 0;
+  top: -80px;
+  z-index: 999;
+}
+
+.header-intro .header-intro-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: rem 1.5rem;
-}
-
-.header .main-header {
-  background-color: #2d2640;
   color: #fafafa;
-  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: right;
   position: relative;
 }
 
-.header .main-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header-intro .header-intro-inner .intro-image {
+  position: relative;
+  top: 100px;
+  right: 0;
 }
 
-.header .main-header h1 {
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 400;
-}
-
-.header .main-header p {
-  font-size: 14px;
-}
-
-.header .main-header .main-header-text {
-  padding-right: 2rem;
+.header-intro .header-intro-discreption {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,30 +120,42 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-right: 1.5rem;
 }
 
-.header .main-header .main-header-text p {
-  margin-top: 20px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.header .main-header .main-header-text .header-btn {
-  display: inline;
-  cursor: pointer;
-  border: #fafafa 2px solid;
-  color: #fafafa;
-  font-weight: 100;
-  font-size: smaller;
-  padding: 0.5rem 2rem;
-}
-
-.header .main-header-img {
+.header-intro .header-intro-discreption h1 {
+  font-size: 5rem;
+  font-weight: 400;
   position: relative;
-  top: 10rem;
-  z-index: 11;
+  line-height: 1;
+}
+
+.header-intro .header-intro-discreption h1::before {
+  content: '';
+  display: block;
+  width: 10rem;
+  height: 1px;
+  background-color: #fafafa;
+  position: absolute;
+  top: -50px;
+}
+
+.header-intro .header-intro-discreption .intro-btn {
+  color: #fafafa;
+  border: 1.5px solid #fafafa;
+  font-weight: 400;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header-intro .header-intro-discreption .title-discreption {
+  margin: 30px 0;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 2;
 }
 /*# sourceMappingURL=style.css.map */
